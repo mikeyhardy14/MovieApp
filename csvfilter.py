@@ -24,12 +24,11 @@ writer = moviedict[7]
 plot = moviedict[9]
 Awards = moviedict[11]
 ratings = float(moviedict[12])
-Metascore =int(moviedict[13])
 TomatoUrl = moviedict[17]
 Production = moviedict[18]
 
 
-
+#Metascore =int(moviedict[13])
 #def actors
 #def MultGenre:
     
