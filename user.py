@@ -5,16 +5,16 @@ import csvfilter
 movie=csvfilter.moviedict
 
 title = movie[1]
-Moiveyear = movie[2]
+movieyear = movie[2]
 rated = movie[3]
 released = movie[4]
 director =movie[6]
 writer = movie[7]
 plot = movie[9]
-Awards = movie[11]
+awards = movie[11]
 ratings = float(movie[12])
-TomatoUrl = movie[17]
-Production = movie[18]
+tomatoUrl = movie[17]
+production = movie[18]
 
 
 def answer(x):
