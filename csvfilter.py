@@ -1,14 +1,15 @@
 import csv
-from random import randint
-import pandas as pd
+import random
+from random import choice
+#import pandas as pd
 
 
-x =[randint(1,250) for p in range(0,1)]
 
-print(x)
+moviedict = {}
 
-# open file
-with open('IMDB_Top250Engmovies2_OMDB_Detailed.csv', 'r') as f:
-    reader = csv.reader(f[x])
-    for x in reader:
-        print(x)
+# open file and convert to dictionary
+with open('IMDB_Top250Engmovies2_OMDB_Detailed.csv') as f:
+    reader = csv.reader(f)
+    moviedict = random.choice(list(reader))
+    
+print(moviedict)
