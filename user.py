@@ -1,33 +1,48 @@
-from tkinter import N
-from urllib import response
+# Done: 
+# This is the file to prompt the user if he likes movies. The user can respond
+# with Yes/No/Not Seen. 
+# To Do:
+# Link Algorithm
+# Link to UI
 import csvfilter
 
-movie=csvfilter.moviedict
 
-title = movie[1]
-movieyear = movie[2]
-rated = movie[3]
-released = movie[4]
-director =movie[6]
-writer = movie[7]
-plot = movie[9]
-awards = movie[11]
-ratings = float(movie[12])
-tomatoUrl = movie[17]
-production = movie[18]
+def welcome():
+    print("Welcome to the Mission 100 MovieApp Review application! \n\n\nLet's get started. Respond to the following questions by saying 'Yes' 'No' or 'Not Seen'\n")
 
 
 def answer(x):
     if x =="Yes":
-        print("Nice!")
+        print("Great Movie!")
         #add number for algorithm
     elif x =="No":
-        print("You suck")
+        print("Bold Take!")
         #subtract number for algorithm
-    else:
+    elif x == "Not Seen":
         print("You're missing Out!")
+    else:
+        print("That is not a valid answer. Be sure to capitalize the proper letters")
+      
+def question():
+    movie=csvfilter.new_movie()
+    title = movie[1]
+    movieyear = movie[2]
+    rated = movie[3]
+    released = movie[4]
+    director =movie[6]
+    writer = movie[7]
+    plot = movie[9]
+    awards = movie[11]
+    ratings = float(movie[12])
+    tomatoUrl = movie[17]
+    production = movie[18]
+    #Metascore =int(moviedict[13])
+    #def actors
+    #def MultGenre:
 
-print("Welcome to the Mission 100 MovieApp Review application! \nLet's get started. Respond to the following questions by saying 'Yes' 'No' or 'Not Seen'")
-i= input("Did you like: {}?\n".format(title))
-
-answer(i)
+    i= input("Did you like: {}? ".format(title))
+    answer(i)
+    
+welcome()
+question()
+question()
