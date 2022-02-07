@@ -12,6 +12,7 @@ import csvfilter
 def welcome():
     print("Welcome to the Mission 100 MovieApp Review application! \n\n\nLet's get started. Respond to the following questions by saying 'Yes' 'No' or 'Not Seen'\n")
 
+    
 def answer(x):
     if x =="Yes":
         print("Great Movie!")

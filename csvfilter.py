@@ -5,8 +5,6 @@ from random import choice
 from turtle import title
 from unicodedata import name
 
-
-
 moviedict = {}
 
 # open file and convert to dictionary 
