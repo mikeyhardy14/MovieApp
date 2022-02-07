@@ -20,3 +20,6 @@ def algorithm(imdbrat):
     fin =total
     
 big_num= fin
+
+def add_genre():
+  print("Here")

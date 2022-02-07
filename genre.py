@@ -1,10 +1,11 @@
+import algorithm
 
-
-
+genres=[]
 drama= 0
 action=0
 crime =0
 bio=0
+dan=0
 adventure=0
 fantasy=0
 romance=0

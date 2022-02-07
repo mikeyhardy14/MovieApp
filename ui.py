@@ -6,7 +6,7 @@ def q_loop():
     while(n < 10):
         user.question()
         n += 1
-    print("All done")
+    print("Let's take a look at the results!")
 
 user.welcome()
 q_loop()

@@ -16,15 +16,16 @@ def welcome():
 def answer(x):
     if x =="Yes":
         print("Great Movie!")
-        
+        #add to new csv file "likedmovies.csv"
     elif x =="No":
         print("Bold Take!")
-        #subtract number for algorithm
+        #add to new file "dislikedmovies.csv"
     elif x == "Not Seen":
         print("You're missing Out!")
+        #add to new file "movienotseen.csv"
     else:
         print("That is not a valid answer. Be sure to capitalize the proper letters")
-      
+
 def question():
     movie=csvfilter.new_movie()
     title = movie[1]
