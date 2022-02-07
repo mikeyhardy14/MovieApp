@@ -4,17 +4,18 @@
 # To Do:
 # Link Algorithm
 # Link to UI
+# Fix Invalid answer new movie problem
 import csvfilter
+
 
 
 def welcome():
     print("Welcome to the Mission 100 MovieApp Review application! \n\n\nLet's get started. Respond to the following questions by saying 'Yes' 'No' or 'Not Seen'\n")
 
-
 def answer(x):
     if x =="Yes":
         print("Great Movie!")
-        #add number for algorithm
+        
     elif x =="No":
         print("Bold Take!")
         #subtract number for algorithm
@@ -42,7 +43,4 @@ def question():
 
     i= input("Did you like: {}? ".format(title))
     answer(i)
-    
-welcome()
-question()
-question()
+
