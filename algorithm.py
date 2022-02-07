@@ -1,4 +1,5 @@
 import random
+import genre
 
 d_tally=0
 big_num=0
@@ -7,14 +8,14 @@ fin=0
 g_tally=0
 p_tally=0
 
-def algorithm():
+
+
+def algorithm(imdbrat):
   #variables
-  decade = 1 *d_tally
   genre = 1.6 *g_tally
-  rating = 1.4 
-  production = 2 *p_tally
+  rating = 1.4 *imdbrat
   
-  total = (decade+ genre + rating+ production)
+  total = (genre + rating)
   if (big_num < total):
     fin =total
     
