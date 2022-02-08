@@ -7,6 +7,7 @@
 # Fix Invalid answer new movie problem
 import csvfilter
 import csv
+import filter
 
 
 
@@ -52,20 +53,14 @@ def question():
 #    answer(i)
 
     if i =="Yes":
-            print("Great Movie!")
+        print("Great Movie!")
         #add to new csv file "likedmovies.csv"
-        #with open ('likedmovies.csv', 'w') as csvfile:
-        #    fieldnames = ['movie number']
-        #    writer =csv.DictWriter(csvfile, fieldnames=fieldnames)
-        #    writer.writerow({'movienumber': movie[0]})
+        filter.likedmovie(movie)
             
     elif i =="No":
         print("Bold Take!")
         #add to new file "dislikedmovies.csv"
-                #with open ('dislikedmovies.csv', 'w') as csvfile:
-        #    fieldnames = ['movie number']
-        #    writer =csv.DictWriter(csvfile, fieldnames=fieldnames)
-        #    writer.writerow({'movienumber': movie[0]})
+        filter.dislikedmovie(movie)
     elif i == "Not Seen":
         print("You're missing Out!")
         #add to new file "already_asked"

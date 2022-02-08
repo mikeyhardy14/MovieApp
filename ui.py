@@ -1,11 +1,17 @@
 import user
 import csv
 import csvfilter
+import os
 
     
 def response(x):
     if x =="Yes":
+        if (os.path.exists('likemovies.csv') and os.path.isfile('likemovies.csv')):
+            os.remove('likemovies.csv')
+        if (os.path.exists('dislikemovies.csv') and os.path.isfile('dislikemovies.csv')):
+            os.remove('dislikemovies.csv')
         print("Thank you for using MovieApp")
+        
     elif x =="No":
         print("BOOOOOOOOO!!!!!!!!!!!!!!......Let's try this again.")
         q_loop()
