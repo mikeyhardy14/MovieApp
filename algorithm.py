@@ -1,26 +1,10 @@
-import random
-import genre
+from collections import Counter
+import re
+#IMDB_Top250Engmovies2_OMDB_Detailed.csv
+#likemovies.csv
 
-d_tally=0
-big_num=0
-total = 0
-fin=0
-g_tally=0
-p_tally=0
+def count_word(file_name):
+        with open(file_name) as f:
+          return Counter(f.read().split()).most_common(3)
 
-
-
-def algorithm(imdbrat):
-  #variables
-  genre = 1.6 *g_tally
-  rating = 1.4 *imdbrat
-  
-  total = (genre + rating)
-  if (big_num < total):
-    fin =total
-    
-big_num= fin
-
-def add_genre():
-  print("Here")
-
+print("Frequency :",count_word("likemovies.csv"))
