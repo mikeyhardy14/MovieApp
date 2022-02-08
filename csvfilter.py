@@ -11,4 +11,10 @@ def new_movie():
     #return movie selection
     return moviedict
 
+def testmovie():
+    with open('IMDB_Top250Engmovies2_OMDB_Detailed.csv') as f:
+        reader = csv.reader(f)
+        moviedict = random.choice(list(reader))
+    #return movie selection
+    return moviedict
 

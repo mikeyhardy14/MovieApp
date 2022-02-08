@@ -26,8 +26,8 @@ def recommend():
     ratings = float(movie[12])
     tomatoUrl = movie[17]
     production = movie[18]
-    print("Our movie recommendation is: '",title,"' from '",movieyear,"'. Here is the plot:\n\n",plot,"\n\n")
-    i=input("Are you happy with your recommendation?")
+    print("Our movie recommendation is: '",title,"' from '",movieyear,"'. Here is the plot:\n\n",plot,"\n")
+    i=input("Are you happy with your recommendation?\n")
     response(i)
 
 def q_loop():
