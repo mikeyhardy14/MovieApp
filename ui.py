@@ -1,8 +1,6 @@
 import user
-import csv
 import csvfilter
 import os
-import filter
 
     
 def response(x):
@@ -45,8 +43,10 @@ def q_loop():
     print("The results are in!\n")
     recommend()
     
-user.welcome()
-q_loop()
+def start():   
+    user.welcome()
+    q_loop()
 
+start()
 
 

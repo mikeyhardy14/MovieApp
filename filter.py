@@ -1,7 +1,6 @@
 import csv
 from csv import writer
 import csvfilter
-import os
 
 movie= csvfilter.testmovie()
 
@@ -16,11 +15,3 @@ def dislikedmovie(movie):
         writer_object.writerow([movie])
         f.close()        
         
-def no_blank(fd):
-    try:
-        while True:
-            line = next(fd)
-            if len(line.strip()) != 0:
-                yield line
-    except:
-        return
